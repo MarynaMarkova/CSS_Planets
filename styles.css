@@ -11,8 +11,15 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: yellow;
   transform: scaleX(5);
+}
+
+.sun {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(248, 244, 163);
+  transform: scaleX(0.2);
 }
 
 .planet {
@@ -38,6 +45,23 @@ body {
   width: 100%;
   height: 100%;
   animation: rotate 12s infinite linear;
+  position: absolute;
+}
+
+.planet-container {
+  width: 60px;
+  height: 60px;
+  animation: correct 12s infinite linear;
+  position: absolute;
+}
+
+#second-planet-container {
+  left: 85px;
+}
+
+#third-planet-container {
+  left: 42.5px;
+  top: 100px;
 }
 
 @keyframes rotate {
@@ -46,5 +70,14 @@ body {
   }
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+@keyframes correct {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
   }
 }
