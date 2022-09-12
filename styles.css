@@ -106,36 +106,54 @@ body {
 @keyframes hideFirstPlanet {
   0% {
     z-index: 999;
+    transform: scale(0.9);
   }
-  10% {
+  25% {
     z-index: -999;
+    transform: scale(0.9);
   }
   50% {
+    transform: scale (0.9);
+  }
+  75% {
     z-index: 999;
+    transform: scale(1.1);
+  }
+  100% {
+    z-index: 999;
+    transform: scale(0.9);
   }
 }
 
 @keyframes hideSecondPlanet {
   0% {
     z-index: -999;
+    transform: scale(0.95);
   }
-  40% {
+  50% {
     z-index: 999;
+    transform: scale(1.1);
   }
-  60% {
-    z-index: -999;
+  90% {
+    transform: scale(0.9);
   }
   100% {
     z-index: -999;
-    }
+    transform: scale(0.95);
+  }
 }
 
 @keyframes hideThirdPlanet {
   0% {
     z-index: 999;
+    transform: scale(1.1);
   }
   50% {
     z-index: -999;
+    transform: scale(0.8);
   }
   100% {
     z-index: 999;
+    transform: sczle(1.1);
+  }
+}
